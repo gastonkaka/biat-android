@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tn.biat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".Biat"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ValidateurActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AuthorisateurActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AdminActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AgentActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

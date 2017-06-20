@@ -1,0 +1,45 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tn.biat.fragments.admin.AddDepartementFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nouveau département"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginBottom="8.0dip">
+            <EditText
+                android:textSize="22dp"
+                android:gravity="center"
+                android:id="@+id/nom_departement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="nom departement" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:text="Valider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:textColorLink="?attr/colorPrimary"
+            tools:ignore="HardcodedText,InefficientWeight" />
+    </LinearLayout>
+
+</ScrollView>
